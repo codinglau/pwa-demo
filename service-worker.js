@@ -2,21 +2,21 @@ self.addEventListener("install", (event) => {
     event.waitUntil(
         caches.open("pwa-demo-cache").then((cache) => {
             return cache.addAll([
-                "/",
-                "/index.html",
-                "/manifest.json",
-                "/js/app.js",
-                "/js/html5-qrcode.min.js",
-                "/js/jquery.min.js",
-                "/js/bootstrap.bundle.min.js",
-                "/images/icons/android-chrome-192x192.png",
-                "/images/icons/android-chrome-512x512.png",
-                "/images/icons/apple-touch-icon.png",
-                "/images/icons/favicon-16x16.png",
-                "/images/icons/favicon-32x32.png",
-                "/images/icons/favicon.ico",
-                "/css/bootstrap.min.css",
-                "/css/styles.css",
+                "/pwa-demo/",
+                "/pwa-demo/index.html",
+                "/pwa-demo/manifest.json",
+                "/pwa-demo/js/app.js",
+                "/pwa-demo/js/html5-qrcode.min.js",
+                "/pwa-demo/js/jquery.min.js",
+                "/pwa-demo/js/bootstrap.bundle.min.js",
+                "/pwa-demo/images/icons/android-chrome-192x192.png",
+                "/pwa-demo/images/icons/android-chrome-512x512.png",
+                "/pwa-demo/images/icons/apple-touch-icon.png",
+                "/pwa-demo/images/icons/favicon-16x16.png",
+                "/pwa-demo/images/icons/favicon-32x32.png",
+                "/pwa-demo/images/icons/favicon.ico",
+                "/pwa-demo/css/bootstrap.min.css",
+                "/pwa-demo/css/styles.css",
             ]).catch((error) => {
                 console.error("Failed to cache all", error);
             } );
