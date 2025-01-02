@@ -1,0 +1,13 @@
+#camera-container {
+    position: relative;
+}
+
+#camera-stream {
+    width: 100%;
+    height: auto;
+}
+
+#native-photo-gallery img, #photo-gallery img {
+    max-width: 100px;
+    max-height: 100px;
+}
